@@ -19,7 +19,7 @@ namespace Proyecto_Finalv5.Properties {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -123,6 +123,36 @@ namespace Proyecto_Finalv5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap checkbox_blank_circle_icon_206115 {
+            get {
+                object obj = ResourceManager.GetObject("checkbox_blank_circle_icon_206115", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checkbox_blank_circle_icon_206115__1_ {
+            get {
+                object obj = ResourceManager.GetObject("checkbox_blank_circle_icon_206115 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checkbox_blank_circle_icon_206115__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("checkbox_blank_circle_icon_206115 (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoP {
             get {
                 object obj = ResourceManager.GetObject("LogoP", resourceCulture);
@@ -133,9 +163,39 @@ namespace Proyecto_Finalv5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ModoL {
+            get {
+                object obj = ResourceManager.GetObject("ModoL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap moon_dark_mode_night_mode_icon_190939 {
+            get {
+                object obj = ResourceManager.GetObject("moon_dark_mode_night_mode_icon_190939", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sonido {
             get {
                 object obj = ResourceManager.GetObject("sonido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sun_icon_icons_com_48221 {
+            get {
+                object obj = ResourceManager.GetObject("sun_icon-icons.com_48221", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

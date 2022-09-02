@@ -24,6 +24,8 @@ namespace Proyecto_Finalv5
         }
         // Variables
         bool Play = false;
+        bool ModeColor = true;
+
 
         // Quitar los Submenus
         private void PersDis()
@@ -281,5 +283,33 @@ namespace Proyecto_Finalv5
             AbrirPanelC(new Form4());
             OcultarMenu();
         }
+
+        private void btnLm_Click(object sender, EventArgs e)
+        {
+            
+            switch (ModeColor)
+            {
+                case true:
+                    
+                    
+                    
+                    btnLm.Image = Properties.Resources.moon_dark_mode_night_mode_icon_190939;
+                    ModeColor = false;
+                    panelCentro.BackColor = Color.FromArgb(192, 192, 255);
+                    panel2.BackColor = Color.FromArgb(192, 192, 255);
+                    break;
+
+                case false:
+                    btnLm.Image = Properties.Resources.sun_icon_icons_com_48221;
+                    ModeColor = true;
+                    panelCentro.BackColor = Color.FromArgb(23, 21, 32);
+                    panel2.BackColor = Color.FromArgb(23, 21, 32);
+                    break;
+            }
+
+
+        }
+
+        
     }
 }

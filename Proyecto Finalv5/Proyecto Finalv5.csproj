@@ -157,5 +157,23 @@
   <ItemGroup>
     <None Include="Resources\Alea.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ModoL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun_icon-icons.com_48221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_blank_circle_icon_206115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_blank_circle_icon_206115 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_blank_circle_icon_206115 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moon_dark_mode_night_mode_icon_190939.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

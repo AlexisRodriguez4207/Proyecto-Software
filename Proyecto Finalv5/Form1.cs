@@ -24,7 +24,7 @@ namespace Proyecto_Finalv5
         }
         // Variables
         bool Play = false;
-        bool ModeColor = true;
+        public bool ModeColor = true;
 
 
         // Quitar los Submenus
@@ -104,7 +104,21 @@ namespace Proyecto_Finalv5
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            
+            // Agregar Canciones
+            OpenFileDialog BuscarArc = new OpenFileDialog();
+            BuscarArc.Multiselect = true;
+
+            if (BuscarArc.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                Archivos = BuscarArc.SafeFileNames;
+                ArchivosMP3 = BuscarArc.FileNames;
+                foreach (var Archivos in ArchivosMP3)
+                {
+                    lstCan.Items.Add(Archivos);
+                }
+            }
+            Reproductor.URL = ArchivosMP3[0];
+            lstCan.SelectedIndex = 0;
             OcultarMenu();
         }
 
@@ -151,8 +165,9 @@ namespace Proyecto_Finalv5
 
         private void button14_Click(object sender, EventArgs e)
         {
-            AbrirPanelC(new Form2());
+            AbrirPanelC(new User());
             OcultarMenu();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -187,6 +202,8 @@ namespace Proyecto_Finalv5
             }
             Reproductor.URL = ArchivosMP3[0];
             lstCan.SelectedIndex = 0;
+
+
         }
 
         private void lstCan_SelectedIndexChanged(object sender, EventArgs e)
@@ -257,14 +274,15 @@ namespace Proyecto_Finalv5
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-                Reproductor.URL = ArchivosMP3[5];
+                Reproductor.URL = ArchivosMP3[0];
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             Random aleatorio = new Random();
             
-            Reproductor.URL = ArchivosMP3[aleatorio.Next(6)];
+            
+            Reproductor.URL = ArchivosMP3[aleatorio.Next(2)];
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -286,17 +304,20 @@ namespace Proyecto_Finalv5
 
         private void btnLm_Click(object sender, EventArgs e)
         {
-            
             switch (ModeColor)
             {
                 case true:
-                    
-                    
-                    
                     btnLm.Image = Properties.Resources.moon_dark_mode_night_mode_icon_190939;
                     ModeColor = false;
                     panelCentro.BackColor = Color.FromArgb(192, 192, 255);
                     panel2.BackColor = Color.FromArgb(192, 192, 255);
+                    label3.ForeColor = Color.Black;
+                    label4.ForeColor = Color.Black;
+                    label2.ForeColor = Color.Black;
+                    lblCancion.ForeColor = Color.Black;
+                    //User panelM = new User();
+                    //panelM.
+
                     break;
 
                 case false:
@@ -304,12 +325,12 @@ namespace Proyecto_Finalv5
                     ModeColor = true;
                     panelCentro.BackColor = Color.FromArgb(23, 21, 32);
                     panel2.BackColor = Color.FromArgb(23, 21, 32);
+                    label3.ForeColor = Color.White;
+                    label4.ForeColor = Color.White;
+                    label2.ForeColor = Color.White;
+                    lblCancion.ForeColor = Color.White;
                     break;
             }
-
-
         }
-
-        
     }
 }

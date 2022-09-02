@@ -30,7 +30,6 @@ C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyec
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto Finalv5.csproj.ResolveComReference.cache
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto_Finalv5.Form1.resources
-C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto_Finalv5.Form2.resources
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto_Finalv5.Form3.resources
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto_Finalv5.Form4.resources
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto_Finalv5.Properties.Resources.resources
@@ -39,3 +38,4 @@ C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyec
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto Finalv5.csproj.CopyComplete
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto Finalv5.exe
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto Finalv5.pdb
+C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto_Finalv5.User.resources

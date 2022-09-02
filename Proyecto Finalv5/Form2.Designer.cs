@@ -1,7 +1,7 @@
 ﻿
 namespace Proyecto_Finalv5
 {
-    partial class Form2
+    partial class User
     {
         /// <summary>
         /// Required designer variable.
@@ -38,8 +38,8 @@ namespace Proyecto_Finalv5
             this.txtNom = new System.Windows.Forms.TextBox();
             this.txtNc = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.pictureBoxUser = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBoxUser = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,17 +135,6 @@ namespace Proyecto_Finalv5
             this.listBox1.Size = new System.Drawing.Size(168, 24);
             this.listBox1.TabIndex = 10;
             // 
-            // pictureBoxUser
-            // 
-            this.pictureBoxUser.Image = global::Proyecto_Finalv5.Properties.Resources.XD;
-            this.pictureBoxUser.Location = new System.Drawing.Point(258, 14);
-            this.pictureBoxUser.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBoxUser.Name = "pictureBoxUser";
-            this.pictureBoxUser.Size = new System.Drawing.Size(183, 153);
-            this.pictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxUser.TabIndex = 0;
-            this.pictureBoxUser.TabStop = false;
-            // 
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -158,7 +147,18 @@ namespace Proyecto_Finalv5
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form2
+            // pictureBoxUser
+            // 
+            this.pictureBoxUser.Image = global::Proyecto_Finalv5.Properties.Resources.XD;
+            this.pictureBoxUser.Location = new System.Drawing.Point(258, 14);
+            this.pictureBoxUser.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxUser.Name = "pictureBoxUser";
+            this.pictureBoxUser.Size = new System.Drawing.Size(183, 153);
+            this.pictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxUser.TabIndex = 0;
+            this.pictureBoxUser.TabStop = false;
+            // 
+            // User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,8 +178,9 @@ namespace Proyecto_Finalv5
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "User";
+            this.Text = "Usuario";
+            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

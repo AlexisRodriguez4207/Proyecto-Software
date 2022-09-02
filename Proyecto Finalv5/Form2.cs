@@ -10,14 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto_Finalv5
 {
-    public partial class Form2 : Form
+    public partial class User : Form
     {
-        public Form2()
+        
+        public User()
         {
             InitializeComponent();
             txtUs.Text = "神の呪文#6814";
             txtNom.Text = "Alexis";
             txtNc.Text = "28/09/2001";
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,7 +43,9 @@ namespace Proyecto_Finalv5
             txtNc.ReadOnly = false;
 
             // Cambiar foto
-            pictureBoxUser.Image = System.Drawing.Image.FromFile(@"C:\Users\BALAMRUSH\Downloads\pfpDisc.jpg");
+            pictureBoxUser.Image = System.Drawing.Image.FromFile(@"C:\Users\BALAMRUSH\Downloads\1485477097-avatar_78580.png");
         }
+
+        
     }
 }

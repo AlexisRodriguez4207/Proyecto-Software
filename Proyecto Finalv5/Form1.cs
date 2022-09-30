@@ -104,7 +104,7 @@ namespace Proyecto_Finalv5
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            // Agregar Canciones
+             // Agregar Canciones
             OpenFileDialog BuscarArc = new OpenFileDialog();
             BuscarArc.Multiselect = true;
 
@@ -331,6 +331,12 @@ namespace Proyecto_Finalv5
                     lblCancion.ForeColor = Color.White;
                     break;
             }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            AbrirPanelC(new FormVid());
+            OcultarMenu();
         }
     }
 }

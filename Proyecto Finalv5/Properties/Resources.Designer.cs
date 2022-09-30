@@ -153,6 +153,17 @@ namespace Proyecto_Finalv5.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap internet_world_wide_web_www_globe_communication_website_browser_network_connection_icon_195710 {
+            get {
+                object obj = ResourceManager.GetObject("internet_world_wide_web_www_globe_communication_website_browser_network_connectio" +
+                        "n_icon_195710", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoP {
             get {
                 object obj = ResourceManager.GetObject("LogoP", resourceCulture);

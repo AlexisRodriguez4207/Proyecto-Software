@@ -21,5 +21,10 @@ namespace Proyecto_Finalv5
         {
             Close();
         }
+
+        private void pictureBoxPg_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

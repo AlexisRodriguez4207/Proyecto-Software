@@ -40,7 +40,7 @@ namespace Proyecto_Finalv5
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 35);
@@ -52,7 +52,7 @@ namespace Proyecto_Finalv5
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(691, 120);
@@ -62,7 +62,7 @@ namespace Proyecto_Finalv5
             // pictureBoxPg
             // 
             this.pictureBoxPg.Image = global::Proyecto_Finalv5.Properties.Resources.internet_world_wide_web_www_globe_communication_website_browser_network_connection_icon_195710;
-            this.pictureBoxPg.Location = new System.Drawing.Point(12, 404);
+            this.pictureBoxPg.Location = new System.Drawing.Point(643, 12);
             this.pictureBoxPg.Name = "pictureBoxPg";
             this.pictureBoxPg.Size = new System.Drawing.Size(64, 50);
             this.pictureBoxPg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -83,7 +83,7 @@ namespace Proyecto_Finalv5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(719, 466);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBoxPg);

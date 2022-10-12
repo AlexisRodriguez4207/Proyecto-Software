@@ -45,6 +45,7 @@ namespace Proyecto_Finalv5
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnPlayL = new System.Windows.Forms.Button();
             this.panelMedia = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnSg = new System.Windows.Forms.Button();
             this.panelLg = new System.Windows.Forms.Panel();
@@ -59,8 +60,6 @@ namespace Proyecto_Finalv5
             this.lblCancion = new System.Windows.Forms.Label();
             this.lstCan = new System.Windows.Forms.ListBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Reproductor = new AxWMPLib.AxWindowsMediaPlayer();
-            this.button3 = new System.Windows.Forms.Button();
             this.btnLm = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -70,6 +69,7 @@ namespace Proyecto_Finalv5
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Reproductor = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1.SuspendLayout();
             this.panelSubX.SuspendLayout();
             this.panelSubMP.SuspendLayout();
@@ -77,7 +77,6 @@ namespace Proyecto_Finalv5
             this.panelLg.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelCentro.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -86,6 +85,7 @@ namespace Proyecto_Finalv5
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -302,6 +302,22 @@ namespace Proyecto_Finalv5
             this.panelMedia.Size = new System.Drawing.Size(233, 166);
             this.panelMedia.TabIndex = 4;
             // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(0, 40);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(233, 40);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Agregar Videos";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -501,33 +517,6 @@ namespace Proyecto_Finalv5
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Reproductor
-            // 
-            this.Reproductor.Enabled = true;
-            this.Reproductor.Location = new System.Drawing.Point(24, 353);
-            this.Reproductor.Name = "Reproductor";
-            this.Reproductor.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Reproductor.OcxState")));
-            this.Reproductor.Size = new System.Drawing.Size(231, 67);
-            this.Reproductor.TabIndex = 24;
-            this.Reproductor.Visible = false;
-            this.Reproductor.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.Reproductor_PlayStateChange);
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 40);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(233, 40);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Agregar Videos";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
             // btnLm
             // 
             this.btnLm.BackColor = System.Drawing.Color.White;
@@ -625,6 +614,17 @@ namespace Proyecto_Finalv5
             this.pictureBox6.TabIndex = 28;
             this.pictureBox6.TabStop = false;
             // 
+            // Reproductor
+            // 
+            this.Reproductor.Enabled = true;
+            this.Reproductor.Location = new System.Drawing.Point(24, 353);
+            this.Reproductor.Name = "Reproductor";
+            this.Reproductor.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Reproductor.OcxState")));
+            this.Reproductor.Size = new System.Drawing.Size(231, 67);
+            this.Reproductor.TabIndex = 24;
+            this.Reproductor.Visible = false;
+            this.Reproductor.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.Reproductor_PlayStateChange);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -647,7 +647,6 @@ namespace Proyecto_Finalv5
             this.panel2.ResumeLayout(false);
             this.panelCentro.ResumeLayout(false);
             this.panelCentro.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -656,6 +655,7 @@ namespace Proyecto_Finalv5
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -679,7 +679,7 @@ namespace Proyecto_Finalv5
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSg;
         private System.Windows.Forms.Panel panelLg;
-        private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private XComponent.SliderBar.MACTrackBar macTrackSonido;
         private XComponent.SliderBar.MACTrackBar macTrackBarEstatus;

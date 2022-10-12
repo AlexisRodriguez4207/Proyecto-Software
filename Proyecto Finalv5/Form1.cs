@@ -21,6 +21,7 @@ namespace Proyecto_Finalv5
             InitializeComponent();
             // Llamada al metodo
             PersDis();
+            panel2.Visible = true;
         }
         // Variables
         bool Play = false;
@@ -302,6 +303,13 @@ namespace Proyecto_Finalv5
             OcultarMenu();
         }
 
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            AbrirPanelC(new Form5());
+            //panel2.Visible = false;
+            OcultarMenu();
+        }
+
         private void btnLm_Click(object sender, EventArgs e)
         {
             switch (ModeColor)
@@ -333,10 +341,9 @@ namespace Proyecto_Finalv5
             }
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            AbrirPanelC(new FormVid());
-            OcultarMenu();
+
         }
     }
 }

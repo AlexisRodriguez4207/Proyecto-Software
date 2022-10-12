@@ -41,6 +41,6 @@ C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyec
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto_Finalv5.User.resources
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Interop.SHDocVw.dll
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\AxInterop.SHDocVw.dll
-C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto_Finalv5.FormVid.resources
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\bin\Debug\Interop.SHDocVw.dll
 C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\bin\Debug\AxInterop.SHDocVw.dll
+C:\Users\BALAMRUSH\Desktop\Tareas\4to Semestre\Topicos avanzados\Examenes\Proyecto Finalv5\Proyecto Finalv5\obj\Debug\Proyecto_Finalv5.Form5.resources

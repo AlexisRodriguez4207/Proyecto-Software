@@ -306,7 +306,7 @@ namespace Proyecto_Finalv5
         private void button3_Click_1(object sender, EventArgs e)
         {
             AbrirPanelC(new Form5());
-            //panel2.Visible = false;
+            panel2.Visible = false;
             OcultarMenu();
         }
 
@@ -342,6 +342,16 @@ namespace Proyecto_Finalv5
         }
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void macTrackBarEstatus_ValueChanged(object sender, decimal value)
         {
 
         }

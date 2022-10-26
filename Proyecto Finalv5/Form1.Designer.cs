@@ -419,6 +419,7 @@ namespace Proyecto_Finalv5
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // macTrackSonido
             // 
@@ -468,6 +469,7 @@ namespace Proyecto_Finalv5
             this.macTrackBarEstatus.TrackLineHeight = 3;
             this.macTrackBarEstatus.TrackLineSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(93)))), ((int)(((byte)(90)))));
             this.macTrackBarEstatus.Value = 0;
+            this.macTrackBarEstatus.ValueChanged += new XComponent.SliderBar.ValueChangedHandler(this.macTrackBarEstatus_ValueChanged);
             // 
             // pictureBox3
             // 
@@ -600,10 +602,10 @@ namespace Proyecto_Finalv5
             // Reproductor
             // 
             this.Reproductor.Enabled = true;
-            this.Reproductor.Location = new System.Drawing.Point(24, 353);
+            this.Reproductor.Location = new System.Drawing.Point(24, 356);
             this.Reproductor.Name = "Reproductor";
             this.Reproductor.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Reproductor.OcxState")));
-            this.Reproductor.Size = new System.Drawing.Size(231, 67);
+            this.Reproductor.Size = new System.Drawing.Size(231, 64);
             this.Reproductor.TabIndex = 24;
             this.Reproductor.Visible = false;
             this.Reproductor.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.Reproductor_PlayStateChange);

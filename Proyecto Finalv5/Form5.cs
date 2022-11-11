@@ -13,7 +13,11 @@ namespace Proyecto_Finalv5
 {   
     public partial class Form5 : Form 
     {
+        int vl = 50;
+        public OpenFileDialog archivo = new OpenFileDialog();
         bool Play = false;
+        int Rep = 0;
+        
 
         public Form5()
         {
@@ -28,8 +32,23 @@ namespace Proyecto_Finalv5
 
         private void toolStripLabel1_Click(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
-            Video.URL = openFileDialog1.FileName;   
+            //openFileDialog1.ShowDialog();
+            //Video.URL = openFileDialog1.FileName;
+            try
+            {
+                AbrirArchivo();
+                if (ruta != "")
+                {
+                    Rep = 2;
+                    AbrirMusic();
+                }
+                else { 
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al abrir el archivo");
+            }
         }
 
         public void ActualizarDTrack()
@@ -54,33 +73,68 @@ namespace Proyecto_Finalv5
         private void macTrackSonido_ValueChanged(object sender, decimal value)
         {
             Video.settings.volume = macTrackSonido.Value;
+            label4.Text = Video.settings.volume.ToString();
         }
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            switch (Play)
+            if (Rep == 1)
             {
-                case true:
-                    Video.Ctlcontrols.pause();
-                    btnPlay.Image = Properties.Resources.jugar;
-                    Play = false;
-                    break;
-
-                case false:
-                    Video.Ctlcontrols.play();
-                    btnPlay.Image = Properties.Resources.pausa; ;
-                    Play = true;
-                    break;
+                AbrirMusic();
+                Rep = 2;
+            }
+            else if (Rep == 2)
+            {
+                Video.Ctlcontrols.pause();
+                tmSlider.Stop();
+                btnPlay.Image = Properties.Resources.jugar;
+                Rep = 3;
+            }
+            else if (Rep == 3)
+            {
+                Video.Ctlcontrols.play();
+                tmSlider.Start();
+                btnPlay.Image = Properties.Resources.pausa;
+                Rep = 2;
             }
         }
 
+        string ruta;
+        public void AbrirMusic()
+        {
+            try
+            {
+                Video.URL = @"" + ruta;
+                Video.Ctlcontrols.play();
+
+                this.Visible = true;
+                tmSlider.Start();
+                macTrackBarEstatus.Enabled = true;
+                btnPlay.Image = Properties.Resources.pausa;
+            }
+            catch
+            {
+                MessageBox.Show("No se pudo abrir el archivo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void macTrackBarEstatus_ValueChanged(object sender, decimal value)
+        {
+            macTrackBarEstatus.Maximum = (int)Video.currentMedia.duration;
+            if (macTrackBarEstatus.Value == (int)Video.Ctlcontrols.currentPosition)
+            {
+                // Prueba
+                //Video.Ctlcontrols.currentPosition = macTrackBarEstatus.Value;
+            }
+            else
+            {
+                Video.Ctlcontrols.currentPosition = macTrackBarEstatus.Value;
+            }
+        }
 
         private void tmSlider_Tick(object sender, EventArgs e)
         {
-            ActualizarDTrack();
             try
             {
-                tmSlider.Start();
                 macTrackBarEstatus.Value = (int)Video.Ctlcontrols.currentPosition;
                 label1.Text = Video.Ctlcontrols.currentPositionString;
                 label2.Text = Video.currentMedia.durationString;
@@ -89,11 +143,7 @@ namespace Proyecto_Finalv5
             {
             
             }
-
         }
-
-        
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             if((macTrackBarEstatus.Value = macTrackBarEstatus.Value - 15) < 0)
@@ -106,14 +156,30 @@ namespace Proyecto_Finalv5
             }
         }
 
+        //Abrir Archivos
+        public void AbrirArchivo()
+        {
+            archivo.Filter = "Archivos de Video (*.mp4)|*.mp4|Archivos de Audio (*.mp3)|*.mp3";
+            DialogResult dres = archivo.ShowDialog();
+            if (dres == DialogResult.Abort)
+                return;
+            if (dres == DialogResult.Cancel)
+                return;
+            ruta = archivo.FileName;
+            label3.Text = archivo.SafeFileName;
+
+
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             macTrackBarEstatus.Value = macTrackBarEstatus.Value + 10;
         }
 
-        private void macTrackBarEstatus_ValueChanged(object sender, decimal value)
+        private void Form5_Load(object sender, EventArgs e)
         {
-
+            label4.Text = (macTrackSonido.Value = Video.settings.volume = vl).ToString();
+            this.Video.uiMode = "none";
         }
     }
 }

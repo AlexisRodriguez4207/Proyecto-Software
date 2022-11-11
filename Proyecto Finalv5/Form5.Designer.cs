@@ -46,6 +46,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
             this.tmSlider = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Video)).BeginInit();
             this.panel1.SuspendLayout();
@@ -100,6 +102,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox4);
@@ -135,7 +138,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Proyecto_Finalv5.Properties.Resources.volumen;
-            this.pictureBox4.Location = new System.Drawing.Point(220, 38);
+            this.pictureBox4.Location = new System.Drawing.Point(189, 38);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(36, 29);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -174,7 +177,7 @@
             this.macTrackSonido.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.macTrackSonido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.macTrackSonido.IndentHeight = 6;
-            this.macTrackSonido.Location = new System.Drawing.Point(262, 45);
+            this.macTrackSonido.Location = new System.Drawing.Point(221, 45);
             this.macTrackSonido.Maximum = 100;
             this.macTrackSonido.Minimum = 0;
             this.macTrackSonido.Name = "macTrackSonido";
@@ -229,17 +232,36 @@
             // 
             this.tmSlider.Tick += new System.EventHandler(this.tmSlider_Tick);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(121, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(399, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(13, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "0";
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(605, 449);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.Video);
             this.Name = "Form5";
             this.Text = "Form5";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Video)).EndInit();
@@ -272,5 +294,7 @@
         private System.Windows.Forms.Timer tmSlider;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

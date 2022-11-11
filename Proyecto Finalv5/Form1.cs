@@ -323,6 +323,7 @@ namespace Proyecto_Finalv5
                     label4.ForeColor = Color.Black;
                     label2.ForeColor = Color.Black;
                     lblCancion.ForeColor = Color.Black;
+                    pictureBox5.Image = Properties.Resources.Log;
                     //User panelM = new User();
                     //panelM.
 
@@ -337,6 +338,9 @@ namespace Proyecto_Finalv5
                     label4.ForeColor = Color.White;
                     label2.ForeColor = Color.White;
                     lblCancion.ForeColor = Color.White;
+                    pictureBox5.Image = Properties.Resources.Log_White;
+
+
                     break;
             }
         }
@@ -352,6 +356,11 @@ namespace Proyecto_Finalv5
         }
 
         private void macTrackBarEstatus_ValueChanged(object sender, decimal value)
+        {
+
+        }
+
+        private void panelMedia_Paint(object sender, PaintEventArgs e)
         {
 
         }

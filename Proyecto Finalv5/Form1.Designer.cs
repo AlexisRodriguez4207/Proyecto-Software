@@ -142,7 +142,7 @@ namespace Proyecto_Finalv5
             // panelSubX
             // 
             this.panelSubX.AutoScroll = true;
-            this.panelSubX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelSubX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
             this.panelSubX.Controls.Add(this.button12);
             this.panelSubX.Controls.Add(this.button13);
             this.panelSubX.Controls.Add(this.button14);
@@ -217,7 +217,7 @@ namespace Proyecto_Finalv5
             // 
             // panelSubMP
             // 
-            this.panelSubMP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelSubMP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
             this.panelSubMP.Controls.Add(this.button7);
             this.panelSubMP.Controls.Add(this.button8);
             this.panelSubMP.Controls.Add(this.btnAgregar);
@@ -293,7 +293,7 @@ namespace Proyecto_Finalv5
             // 
             // panelMedia
             // 
-            this.panelMedia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelMedia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
             this.panelMedia.Controls.Add(this.button3);
             this.panelMedia.Controls.Add(this.button1);
             this.panelMedia.Dock = System.Windows.Forms.DockStyle.Top;
@@ -301,6 +301,7 @@ namespace Proyecto_Finalv5
             this.panelMedia.Name = "panelMedia";
             this.panelMedia.Size = new System.Drawing.Size(233, 166);
             this.panelMedia.TabIndex = 4;
+            this.panelMedia.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMedia_Paint);
             // 
             // button3
             // 
@@ -353,6 +354,7 @@ namespace Proyecto_Finalv5
             // panelLg
             // 
             this.panelLg.AutoScroll = true;
+            this.panelLg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
             this.panelLg.Controls.Add(this.label1);
             this.panelLg.Controls.Add(this.pictureBox6);
             this.panelLg.Dock = System.Windows.Forms.DockStyle.Top;
@@ -543,7 +545,7 @@ namespace Proyecto_Finalv5
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Proyecto_Finalv5.Properties.Resources.LogoP;
+            this.pictureBox5.Image = global::Proyecto_Finalv5.Properties.Resources.Log;
             this.pictureBox5.Location = new System.Drawing.Point(243, 38);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(234, 211);
@@ -619,7 +621,7 @@ namespace Proyecto_Finalv5
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::Proyecto_Finalv5.Properties.Resources.LogoP;
+            this.pictureBox6.Image = global::Proyecto_Finalv5.Properties.Resources.Log;
             this.pictureBox6.Location = new System.Drawing.Point(12, 21);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(74, 54);

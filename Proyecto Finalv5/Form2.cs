@@ -20,6 +20,8 @@ namespace Proyecto_Finalv5
             txtNom.Text = "Alexis";
             txtNc.Text = "28/09/2001";
             
+            //if()
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

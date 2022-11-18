@@ -36,10 +36,10 @@ namespace Proyecto_Finalv5
             this.btnAyuda = new System.Windows.Forms.Button();
             this.panelSubX = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.panelSubMP = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -50,42 +50,44 @@ namespace Proyecto_Finalv5
             this.btnSg = new System.Windows.Forms.Button();
             this.panelLg = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.macTrackSonido = new XComponent.SliderBar.MACTrackBar();
-            this.macTrackBarEstatus = new XComponent.SliderBar.MACTrackBar();
-            this.panelCentro = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblCancion = new System.Windows.Forms.Label();
-            this.lstCan = new System.Windows.Forms.ListBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Reproductor = new AxWMPLib.AxWindowsMediaPlayer();
-            this.btnLm = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.lblVol = new System.Windows.Forms.Label();
+            this.lblIn = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.macTrackSonido = new XComponent.SliderBar.MACTrackBar();
+            this.macTrackBarEstatus = new XComponent.SliderBar.MACTrackBar();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panelCentro = new System.Windows.Forms.Panel();
+            this.btnLm = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblCancion = new System.Windows.Forms.Label();
+            this.Reproductor = new AxWMPLib.AxWindowsMediaPlayer();
+            this.lstCan = new System.Windows.Forms.ListBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panelSubX.SuspendLayout();
             this.panelSubMP.SuspendLayout();
             this.panelMedia.SuspendLayout();
             this.panelLg.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panelCentro.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panelCentro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -144,7 +146,6 @@ namespace Proyecto_Finalv5
             this.panelSubX.AutoScroll = true;
             this.panelSubX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
             this.panelSubX.Controls.Add(this.button12);
-            this.panelSubX.Controls.Add(this.button13);
             this.panelSubX.Controls.Add(this.button14);
             this.panelSubX.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubX.Location = new System.Drawing.Point(0, 567);
@@ -158,7 +159,7 @@ namespace Proyecto_Finalv5
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(0, 80);
+            this.button12.Location = new System.Drawing.Point(0, 40);
             this.button12.Name = "button12";
             this.button12.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button12.Size = new System.Drawing.Size(233, 40);
@@ -167,21 +168,6 @@ namespace Proyecto_Finalv5
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button13
-            // 
-            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(0, 40);
-            this.button13.Name = "button13";
-            this.button13.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(233, 40);
-            this.button13.TabIndex = 1;
-            this.button13.Text = "Notificaciones";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = true;
             // 
             // button14
             // 
@@ -218,6 +204,7 @@ namespace Proyecto_Finalv5
             // panelSubMP
             // 
             this.panelSubMP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
+            this.panelSubMP.Controls.Add(this.button4);
             this.panelSubMP.Controls.Add(this.button7);
             this.panelSubMP.Controls.Add(this.button8);
             this.panelSubMP.Controls.Add(this.btnAgregar);
@@ -226,6 +213,22 @@ namespace Proyecto_Finalv5
             this.panelSubMP.Name = "panelSubMP";
             this.panelSubMP.Size = new System.Drawing.Size(233, 166);
             this.panelSubMP.TabIndex = 6;
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(0, 120);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(233, 40);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Musica";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button7
             // 
@@ -374,9 +377,21 @@ namespace Proyecto_Finalv5
             this.label1.TabIndex = 29;
             this.label1.Text = "Xeon";
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Proyecto_Finalv5.Properties.Resources.Log;
+            this.pictureBox6.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(74, 54);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 28;
+            this.pictureBox6.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.lblVol);
+            this.panel2.Controls.Add(this.lblIn);
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.macTrackSonido);
@@ -390,6 +405,46 @@ namespace Proyecto_Finalv5
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(735, 131);
             this.panel2.TabIndex = 5;
+            // 
+            // lblVol
+            // 
+            this.lblVol.AutoSize = true;
+            this.lblVol.Location = new System.Drawing.Point(692, 49);
+            this.lblVol.Name = "lblVol";
+            this.lblVol.Size = new System.Drawing.Size(19, 20);
+            this.lblVol.TabIndex = 13;
+            this.lblVol.Text = "0";
+            // 
+            // lblIn
+            // 
+            this.lblIn.AutoSize = true;
+            this.lblIn.Location = new System.Drawing.Point(3, 106);
+            this.lblIn.Name = "lblIn";
+            this.lblIn.Size = new System.Drawing.Size(44, 20);
+            this.lblIn.TabIndex = 11;
+            this.lblIn.Text = "0:00";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Proyecto_Finalv5.Properties.Resources.barajar;
+            this.pictureBox7.Location = new System.Drawing.Point(316, 32);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 7;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Proyecto_Finalv5.Properties.Resources.volumen;
+            this.pictureBox4.Location = new System.Drawing.Point(447, 38);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(51, 37);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // macTrackSonido
             // 
@@ -441,140 +496,6 @@ namespace Proyecto_Finalv5
             this.macTrackBarEstatus.Value = 0;
             this.macTrackBarEstatus.ValueChanged += new XComponent.SliderBar.ValueChangedHandler(this.macTrackBarEstatus_ValueChanged);
             // 
-            // panelCentro
-            // 
-            this.panelCentro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.panelCentro.Controls.Add(this.btnLm);
-            this.panelCentro.Controls.Add(this.label4);
-            this.panelCentro.Controls.Add(this.label3);
-            this.panelCentro.Controls.Add(this.pictureBox5);
-            this.panelCentro.Controls.Add(this.label2);
-            this.panelCentro.Controls.Add(this.lblCancion);
-            this.panelCentro.Controls.Add(this.Reproductor);
-            this.panelCentro.Controls.Add(this.lstCan);
-            this.panelCentro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCentro.Location = new System.Drawing.Point(250, 0);
-            this.panelCentro.Name = "panelCentro";
-            this.panelCentro.Size = new System.Drawing.Size(735, 505);
-            this.panelCentro.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(264, 311);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(195, 20);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Reproductor de Musica";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(328, 265);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 31);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Xeon";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(6, 480);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 20);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Sonando:";
-            // 
-            // lblCancion
-            // 
-            this.lblCancion.AutoSize = true;
-            this.lblCancion.ForeColor = System.Drawing.Color.Black;
-            this.lblCancion.Location = new System.Drawing.Point(101, 480);
-            this.lblCancion.Name = "lblCancion";
-            this.lblCancion.Size = new System.Drawing.Size(21, 20);
-            this.lblCancion.TabIndex = 25;
-            this.lblCancion.Text = "--";
-            this.lblCancion.Visible = false;
-            // 
-            // lstCan
-            // 
-            this.lstCan.FormattingEnabled = true;
-            this.lstCan.ItemHeight = 20;
-            this.lstCan.Location = new System.Drawing.Point(390, 363);
-            this.lstCan.Name = "lstCan";
-            this.lstCan.Size = new System.Drawing.Size(333, 124);
-            this.lstCan.TabIndex = 23;
-            this.lstCan.Visible = false;
-            this.lstCan.SelectedIndexChanged += new System.EventHandler(this.lstCan_SelectedIndexChanged);
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // Reproductor
-            // 
-            this.Reproductor.Enabled = true;
-            this.Reproductor.Location = new System.Drawing.Point(24, 356);
-            this.Reproductor.Name = "Reproductor";
-            this.Reproductor.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Reproductor.OcxState")));
-            this.Reproductor.Size = new System.Drawing.Size(231, 64);
-            this.Reproductor.TabIndex = 24;
-            this.Reproductor.Visible = false;
-            this.Reproductor.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.Reproductor_PlayStateChange);
-            // 
-            // btnLm
-            // 
-            this.btnLm.BackColor = System.Drawing.Color.White;
-            this.btnLm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLm.Image = global::Proyecto_Finalv5.Properties.Resources.sun_icon_icons_com_48221;
-            this.btnLm.Location = new System.Drawing.Point(24, 12);
-            this.btnLm.Name = "btnLm";
-            this.btnLm.Size = new System.Drawing.Size(44, 46);
-            this.btnLm.TabIndex = 32;
-            this.btnLm.UseVisualStyleBackColor = false;
-            this.btnLm.Click += new System.EventHandler(this.btnLm_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Proyecto_Finalv5.Properties.Resources.Log;
-            this.pictureBox5.Location = new System.Drawing.Point(243, 38);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(234, 211);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 27;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Proyecto_Finalv5.Properties.Resources.barajar;
-            this.pictureBox7.Location = new System.Drawing.Point(316, 32);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(50, 37);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Proyecto_Finalv5.Properties.Resources.volumen;
-            this.pictureBox4.Location = new System.Drawing.Point(447, 38);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(51, 37);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Proyecto_Finalv5.Properties.Resources.lista_de_reproduccion;
@@ -619,15 +540,118 @@ namespace Proyecto_Finalv5
             this.btnPlay.TabStop = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
-            // pictureBox6
+            // panelCentro
             // 
-            this.pictureBox6.Image = global::Proyecto_Finalv5.Properties.Resources.Log;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 21);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(74, 54);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 28;
-            this.pictureBox6.TabStop = false;
+            this.panelCentro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelCentro.Controls.Add(this.btnLm);
+            this.panelCentro.Controls.Add(this.label4);
+            this.panelCentro.Controls.Add(this.label3);
+            this.panelCentro.Controls.Add(this.pictureBox5);
+            this.panelCentro.Controls.Add(this.label2);
+            this.panelCentro.Controls.Add(this.lblCancion);
+            this.panelCentro.Controls.Add(this.Reproductor);
+            this.panelCentro.Controls.Add(this.lstCan);
+            this.panelCentro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCentro.Location = new System.Drawing.Point(250, 0);
+            this.panelCentro.Name = "panelCentro";
+            this.panelCentro.Size = new System.Drawing.Size(735, 505);
+            this.panelCentro.TabIndex = 6;
+            // 
+            // btnLm
+            // 
+            this.btnLm.BackColor = System.Drawing.Color.White;
+            this.btnLm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLm.Image = global::Proyecto_Finalv5.Properties.Resources.sun_icon_icons_com_48221;
+            this.btnLm.Location = new System.Drawing.Point(24, 12);
+            this.btnLm.Name = "btnLm";
+            this.btnLm.Size = new System.Drawing.Size(44, 46);
+            this.btnLm.TabIndex = 32;
+            this.btnLm.UseVisualStyleBackColor = false;
+            this.btnLm.Click += new System.EventHandler(this.btnLm_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(264, 311);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(195, 20);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Reproductor de Musica";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(328, 265);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 31);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Xeon";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Proyecto_Finalv5.Properties.Resources.Log;
+            this.pictureBox5.Location = new System.Drawing.Point(243, 38);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(234, 211);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 27;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(6, 480);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 20);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Sonando:";
+            // 
+            // lblCancion
+            // 
+            this.lblCancion.AutoSize = true;
+            this.lblCancion.ForeColor = System.Drawing.Color.Black;
+            this.lblCancion.Location = new System.Drawing.Point(101, 480);
+            this.lblCancion.Name = "lblCancion";
+            this.lblCancion.Size = new System.Drawing.Size(21, 20);
+            this.lblCancion.TabIndex = 25;
+            this.lblCancion.Text = "--";
+            this.lblCancion.Visible = false;
+            // 
+            // Reproductor
+            // 
+            this.Reproductor.Enabled = true;
+            this.Reproductor.Location = new System.Drawing.Point(24, 356);
+            this.Reproductor.Name = "Reproductor";
+            this.Reproductor.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Reproductor.OcxState")));
+            this.Reproductor.Size = new System.Drawing.Size(231, 64);
+            this.Reproductor.TabIndex = 24;
+            this.Reproductor.Visible = false;
+            this.Reproductor.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.Reproductor_PlayStateChange);
+            // 
+            // lstCan
+            // 
+            this.lstCan.FormattingEnabled = true;
+            this.lstCan.ItemHeight = 20;
+            this.lstCan.Location = new System.Drawing.Point(390, 363);
+            this.lstCan.Name = "lstCan";
+            this.lstCan.Size = new System.Drawing.Size(333, 124);
+            this.lstCan.TabIndex = 23;
+            this.lstCan.Visible = false;
+            this.lstCan.SelectedIndexChanged += new System.EventHandler(this.lstCan_SelectedIndexChanged);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -642,24 +666,26 @@ namespace Proyecto_Finalv5
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.Text = "Xeon Music Player";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panelSubX.ResumeLayout(false);
             this.panelSubMP.ResumeLayout(false);
             this.panelMedia.ResumeLayout(false);
             this.panelLg.ResumeLayout(false);
             this.panelLg.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panelCentro.ResumeLayout(false);
-            this.panelCentro.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panelCentro.ResumeLayout(false);
+            this.panelCentro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Reproductor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -671,7 +697,6 @@ namespace Proyecto_Finalv5
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Panel panelSubX;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panelSubMP;
@@ -682,7 +707,7 @@ namespace Proyecto_Finalv5
         private System.Windows.Forms.Panel panelMedia;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSg;
-        private System.Windows.Forms.Panel panelLg;
+        public System.Windows.Forms.Panel panelLg;
         public System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private XComponent.SliderBar.MACTrackBar macTrackSonido;
@@ -705,6 +730,9 @@ namespace Proyecto_Finalv5
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button btnLm;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lblIn;
+        private System.Windows.Forms.Label lblVol;
+        private System.Windows.Forms.Button button4;
     }
 }
 

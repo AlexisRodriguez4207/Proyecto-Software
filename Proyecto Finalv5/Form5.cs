@@ -22,28 +22,38 @@ namespace Proyecto_Finalv5
         public Form5()
         {
             InitializeComponent();
-            
+            //panel2.Visible = false;
+
         }
 
         private void toolStripLabel2_Click(object sender, EventArgs e)
         {
+            
             Close();
         }
 
         private void toolStripLabel1_Click(object sender, EventArgs e)
         {
+            //if (Video.currentMedia == null)
+            //{
+            //    DialogResult Sl = MessageBox.Show("Necesitas seleccionar mínimo Una Canción \nVuelve a intentarlo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    tmSlider.Stop();
+            //}
             //openFileDialog1.ShowDialog();
             //Video.URL = openFileDialog1.FileName;
             try
-            {
-                AbrirArchivo();
-                if (ruta != "")
-                {
-                    Rep = 2;
-                    AbrirMusic();
-                }
-                else { 
-                }
+            {           
+                    AbrirArchivo();
+                    if (ruta != "")
+                    {
+                        Rep = 2;
+                        AbrirMusic();
+                    }
+                    else
+                    {
+
+                    }
+                
             }
             catch (Exception ex)
             {
@@ -55,7 +65,7 @@ namespace Proyecto_Finalv5
         {
             if (Video.playState == WMPLib.WMPPlayState.wmppsPlaying)
             {
-                // Tiempo Macimo del Reproductor
+                // Tiempo Maximo del Reproductor
                 macTrackBarEstatus.Maximum = (int)Video.Ctlcontrols.currentItem.duration;
                 tmSlider.Start();
             }
@@ -104,13 +114,21 @@ namespace Proyecto_Finalv5
         {
             try
             {
-                Video.URL = @"" + ruta;
-                Video.Ctlcontrols.play();
+                if (Video.currentMedia != null)
+                {
+                    Video.Ctlcontrols.stop();
+                    Video.URL = "";
+                }
+                else
+                {
+                    Video.URL = @"" + ruta;
+                    Video.Ctlcontrols.play();
 
-                this.Visible = true;
-                tmSlider.Start();
-                macTrackBarEstatus.Enabled = true;
-                btnPlay.Image = Properties.Resources.pausa;
+                    this.Visible = true;
+                    tmSlider.Start();
+                    macTrackBarEstatus.Enabled = true;
+                    btnPlay.Image = Properties.Resources.pausa;
+                }
             }
             catch
             {
@@ -133,16 +151,25 @@ namespace Proyecto_Finalv5
 
         private void tmSlider_Tick(object sender, EventArgs e)
         {
-            try
-            {
-                macTrackBarEstatus.Value = (int)Video.Ctlcontrols.currentPosition;
-                label1.Text = Video.Ctlcontrols.currentPositionString;
-                label2.Text = Video.currentMedia.durationString;
-            }
-            catch
-            {
+            //if (Video.currentMedia == null)
+            //{
+            //    DialogResult Sl = MessageBox.Show("Necesitas seleccionar mínimo Una Canción \nVuelve a intentarlo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    tmSlider.Stop();
+            //}
+           
+                try
+                {
+                    macTrackBarEstatus.Value = (int)Video.Ctlcontrols.currentPosition;
+                    label1.Text = Video.Ctlcontrols.currentPositionString;
+                    label2.Text = Video.currentMedia.durationString;
+
+                }
+                catch
+                {
+
+                }
             
-            }
+            
         }
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -167,8 +194,6 @@ namespace Proyecto_Finalv5
                 return;
             ruta = archivo.FileName;
             label3.Text = archivo.SafeFileName;
-
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -180,6 +205,16 @@ namespace Proyecto_Finalv5
         {
             label4.Text = (macTrackSonido.Value = Video.settings.volume = vl).ToString();
             this.Video.uiMode = "none";
+        }
+
+        private void Video_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

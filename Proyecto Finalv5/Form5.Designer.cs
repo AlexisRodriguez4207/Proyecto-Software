@@ -37,6 +37,7 @@
             this.Video = new AxWMPLib.AxWindowsMediaPlayer();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -47,7 +48,6 @@
             this.btnPlay = new System.Windows.Forms.PictureBox();
             this.tmSlider = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Video)).BeginInit();
             this.panel1.SuspendLayout();
@@ -95,6 +95,7 @@
             this.Video.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Video.OcxState")));
             this.Video.Size = new System.Drawing.Size(605, 449);
             this.Video.TabIndex = 0;
+            this.Video.Enter += new System.EventHandler(this.Video_Enter);
             // 
             // openFileDialog2
             // 
@@ -117,6 +118,15 @@
             this.panel1.Size = new System.Drawing.Size(605, 70);
             this.panel1.TabIndex = 2;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(399, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(13, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "0";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -125,6 +135,7 @@
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 11;
             this.label2.Text = "0:00";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -239,15 +250,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(399, 48);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "0";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form5
             // 
